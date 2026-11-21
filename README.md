@@ -1,3 +1,5 @@
+[![Powered by Caelara Labs](https://benchmarks.caelaralabs.com/verify/powered-by.svg)](https://caelaralabs.com)
+
 # Lead Enrichment (white-label starter)
 
 A small Cloudflare Pages site that enriches a lead with two lookups: whether the email address can receive mail, and a profile of the company behind the domain. It uses the Caelara compatibility endpoints, so the calls look like common email-verifier and company-lookup APIs.
