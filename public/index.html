@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lead Enrichment</title>
+<meta name="description" content="Check whether a work email can receive mail and look up the company behind a domain.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><strong id="brand">Lead Enrichment</strong></div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Check a lead before you contact them.</h1>
+    <p class="sub">Enter a work email, a company domain, or both. You get a mail-deliverability check from DNS signals and a company profile from the public home page.</p>
+    <form id="f" autocomplete="off"><noscript>This page needs JavaScript to run.</noscript></form>
+    <p id="status" class="status" role="status"></p>
+  </section>
+  <section id="out" hidden>
+    <div class="card">
+      <h2>Result</h2>
+      <div id="pills"></div>
+      <details><summary>Full response</summary><pre id="raw"></pre></details>
+      <p class="muted">The mailbox itself is never contacted: deliverable means the domain can receive mail. Company fields come from the public home page and are empty when the site does not publish them.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap muted foot">Data by <a href="https://caelaralabs.com" rel="noopener">Caelara Labs</a>. Heuristic checks: a clean result is not a guarantee.</footer>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

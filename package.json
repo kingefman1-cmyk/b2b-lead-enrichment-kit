@@ -1,0 +1,17 @@
+{
+  "name": "b2b-lead-enrichment-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Check whether a work email can receive mail and look up the company behind a domain.",
+  "author": "Caelara Labs <ops@caelaralabs.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}
